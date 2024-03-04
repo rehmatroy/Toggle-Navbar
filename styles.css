@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* code of 2nd navbar is goes here */
+.navbar2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(5, 130, 171);
+    padding: 15px 20px;
+}
+.navbar-brand2 {
+    color: #fff;
+    font-size: 22px;
+}
+.navList-header{
+    display: flex;
+}
+.navList{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navList li{
+    margin: 0 10px;
+}
+.navList li a{
+    text-decoration: none;
+    color: #fff;
+}
+.toggle-btn2{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .navbar2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .navList-header{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .navList{
+        display: none;
+        flex-direction: column;
+    }
+    .navList li{
+        margin: 10px 0;
+    }
+    .toggle-btn2{
+        display: block;
+    }
+    .show{
+        display: block;
+    }
+}
